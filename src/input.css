@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.boxWidth {
+  @apply xl:max-w-[1280px] w-full;
+}
+.heading2 {
+  @apply font-poppins text-green-200 font-semibold xs:text-[48px] text-[40px]  xs:leading-[76.8px] leading-[66.8px] w-full;
+}
+.paragraph {
+  @apply font-poppins font-normal text-gray-200 text-[18px] leading-[30.8];
+}
+.flexCenter {
+  @apply flex justify-center items-start;
+}
+.paddingX {
+  @apply sm:px-16 px-6;
+}
+.paddingY {
+  @apply sm:py-16 py-6;
+}
+.marginX {
+  @apply sm:mx-16 mx-6;
+}
+.marginY {
+  @apply sm:my-16 my-6;
+}
