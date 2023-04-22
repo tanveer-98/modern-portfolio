@@ -26,3 +26,53 @@
 .marginY {
   @apply sm:my-16 my-6;
 }
+
+
+.sidebar{
+  /* -webkit-animation: bottom-to-top 1s linear;
+  animation : bottom-to-top 1s ease-in-out; */
+  /* background-color: rgb(226, 0, 0); */
+  transition : visibility 4s ease-in-out , opacity 6s ease-in-out;
+  animation: right-to-left 5s ease-in-out;
+  background: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+  background-attachment: fixed;
+}
+.sidebar-open{
+  opacity : 100%;
+  transform: translateX(-100px);
+}
+.sidebar-close{
+  transform: translateX(1000px);
+  opacity: 0%;
+}
+
+
+
+@keyframes right-to-left {
+  0% {
+    transform: translateX(1000px);
+    /* opacity: 0; */
+  }
+  6.66%, 26.64% {
+    transform: translateX(0px);
+    /* opacity: 1; */
+  }
+  33.30%, 100% {
+    transform: translateX(1000px);
+    /* opacity: 0; */
+  }
+}
+
+.bg-black-gradient {
+  background: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+}

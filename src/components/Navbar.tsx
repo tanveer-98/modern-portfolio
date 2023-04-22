@@ -21,10 +21,19 @@ const Navbar = () => {
         ))}
       </ul>
         <div className="sm:hidden flex flex-1 justify-end items-center">
-          <img src={`${close ?"close.svg":"menu.svg"}`}  className={`${close ? "" : ""}`}
+          <img src={`${close ?"close.svg":"menu.svg"}`}  className={`${close ? "" : ""}
+          w-[28px] h-[28px] object-contain`}
           alt = "menu"
           onClick={()=>setToggle((prev)=>!prev)}
           />
+
+          <div className={`sidebar ${close?"flex sidebar-open":" sidebar-close"} p-6  absolute top-20 right-0 mx-4 my-2
+          min-w-[140px] rounded-xl  text-white
+          `}>
+
+          hello
+
+          </div>
         </div>
 
 
